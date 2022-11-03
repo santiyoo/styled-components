@@ -2,7 +2,7 @@ import { Circle, Container, Row, Column, Category } from "./style";
 
 const Categories = (data) => {
     function validateAmount(x) {
-        if (x == 0) {
+        if (x === 0) {
             return <p>No Resources</p>
         }
         else if (x > 0) {
