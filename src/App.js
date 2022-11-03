@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Categories from './components/Categories/Categories';
+
+const data = [
+  {
+    category: 'Subcontractors',
+    color: 'purple',
+    amount: null
+  },
+  {
+    category: 'Training',
+    color: 'lightblue',
+    amount: 0  
+  },
+  {
+    category: 'Pending Status',
+    color: 'red',
+    amount: 6
+  },
+  {
+    category: 'Overassigned',
+    color: 'yellow',
+    amount: null
+  },
+  {
+    category: 'Low Allocation',
+    color: 'pink',
+    amount: null
+  },
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Categories data={data}/>
     </div>
   );
 }
